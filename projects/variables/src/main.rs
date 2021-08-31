@@ -2,14 +2,36 @@ fn main() {
     // println!("안녕하세요!");
     // another_function();
     // another_function(5);
-    another_function(5,6);
+    // another_function(5,6);
+
+    // let x = 5;
+    // let y = {
+    //     let x = 3;
+    //     x+1     // 표현식은 마지막에 세미콜론을 포함하지 않음
+    // };
+    // println!("y의 값 : {}", y);
+    
+    let x = five();
+    println!("x의 값 : {}", x);
+	
+    let y = plus_one(x);
+    println!("y의 값 : {}", y);
+
 }
 
-fn another_function(x: i32, y: i32) {
-    // println!("또 다른 함수!");
-    println!("x의 값 : {}", x);
-    println!("y의 값 : {}", y);
+fn plus_one(x: i32) -> i32 {
+  x + 1
 }
+
+fn five() -> i32 {
+  5
+}
+
+// fn another_function(x: i32, y: i32) {
+//     // println!("또 다른 함수!");
+//     println!("x의 값 : {}", x);
+//     println!("y의 값 : {}", y);
+// }
 
 /*
 fn variables() {
